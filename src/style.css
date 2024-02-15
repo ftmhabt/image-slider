@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.frame{
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.frame>*{
+    position: absolute;
+}
+
+.frame img{
+    width: 700px;
+    z-index: -1;
+}
+
+.frame svg{
+    opacity: .5;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.frame div{
+    top: 200px;
+}
+
+.right{
+    left: 620px;
+}

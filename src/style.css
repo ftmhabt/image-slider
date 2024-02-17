@@ -25,10 +25,6 @@ img{
     pointer-events: none;
 }
 
-.show{
-    opacity: 1;
-}
-
 
 .frame svg{
     opacity: .5;
@@ -44,4 +40,23 @@ img{
 
 .right{
     left: 620px;
+}
+
+.frame .dots{
+    top: 450px;
+    left: 332px;
+    display: flex;
+    gap: 5px;
+}
+
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: white;
+    opacity: .6;
+}
+
+.show{
+    opacity: 1;
 }

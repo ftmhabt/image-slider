@@ -4,6 +4,7 @@ const right = document.querySelector('.right');
 const left = document.querySelector('.left');
 const images = Array.from(document.querySelectorAll('img'));
 
+const dots=document.querySelectorAll('.dot');
 
 function toRight() {
     for (let i = 0; i < images.length; i++) {
@@ -11,6 +12,8 @@ function toRight() {
             images[i].classList.remove('show');
             const next = (i + 1) % images.length;
             images[next].classList.add('show');
+            dots[i].classList.remove('show');
+            dots[next].classList.add('show');
             break;
         }
     }
@@ -23,6 +26,8 @@ function toLeft() {
             images[i].classList.remove('show');
             next = i === 0 ? images.length - 1 : (i - 1);
             images[next].classList.add('show');
+            dots[i].classList.remove('show');
+            dots[next].classList.add('show');
             break;
         }
     }

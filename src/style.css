@@ -20,7 +20,9 @@ img{
 
     opacity: 0;
 
-    transition: opacity 100ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
+
+    pointer-events: none;
 }
 
 .show{
